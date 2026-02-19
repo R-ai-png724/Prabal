@@ -1,0 +1,109 @@
+{
+  "CYP2D6": {
+    "description": "Cytochrome P450 2D6 — metabolizes ~25% of all drugs",
+    "alleles": {
+      "*1":  {"function": "normal",    "activity_value": 1.0},
+      "*2":  {"function": "normal",    "activity_value": 1.0},
+      "*3":  {"function": "no",        "activity_value": 0.0},
+      "*4":  {"function": "no",        "activity_value": 0.0},
+      "*5":  {"function": "no",        "activity_value": 0.0},
+      "*6":  {"function": "no",        "activity_value": 0.0},
+      "*9":  {"function": "decreased", "activity_value": 0.5},
+      "*10": {"function": "decreased", "activity_value": 0.5},
+      "*17": {"function": "decreased", "activity_value": 0.5},
+      "*29": {"function": "decreased", "activity_value": 0.5},
+      "*41": {"function": "decreased", "activity_value": 0.5},
+      "*1xN":{"function": "increased", "activity_value": 2.0},
+      "*2xN":{"function": "increased", "activity_value": 2.0}
+    },
+    "activity_score_to_phenotype": [
+      {"min": 0.0, "max": 0.0,  "phenotype": "PM",  "full_name": "Poor Metabolizer"},
+      {"min": 0.5, "max": 1.0,  "phenotype": "IM",  "full_name": "Intermediate Metabolizer"},
+      {"min": 1.5, "max": 2.25, "phenotype": "NM",  "full_name": "Normal Metabolizer"},
+      {"min": 2.5, "max": 99.0, "phenotype": "UM",  "full_name": "Ultrarapid Metabolizer"}
+    ]
+  },
+  "CYP2C19": {
+    "description": "Cytochrome P450 2C19 — metabolizes PPIs, antiplatelet, antidepressants",
+    "alleles": {
+      "*1":  {"function": "normal",    "activity_value": 1.0},
+      "*2":  {"function": "no",        "activity_value": 0.0},
+      "*3":  {"function": "no",        "activity_value": 0.0},
+      "*4":  {"function": "no",        "activity_value": 0.0},
+      "*5":  {"function": "no",        "activity_value": 0.0},
+      "*17": {"function": "increased", "activity_value": 1.5}
+    },
+    "activity_score_to_phenotype": [
+      {"min": 0.0, "max": 0.0,  "phenotype": "PM",  "full_name": "Poor Metabolizer"},
+      {"min": 0.5, "max": 1.0,  "phenotype": "IM",  "full_name": "Intermediate Metabolizer"},
+      {"min": 1.5, "max": 2.0,  "phenotype": "NM",  "full_name": "Normal Metabolizer"},
+      {"min": 2.5, "max": 99.0, "phenotype": "RM",  "full_name": "Rapid Metabolizer"}
+    ]
+  },
+  "CYP2C9": {
+    "description": "Cytochrome P450 2C9 — metabolizes warfarin, NSAIDs, phenytoin",
+    "alleles": {
+      "*1":  {"function": "normal",    "activity_value": 1.0},
+      "*2":  {"function": "decreased", "activity_value": 0.5},
+      "*3":  {"function": "no",        "activity_value": 0.0},
+      "*4":  {"function": "no",        "activity_value": 0.0},
+      "*5":  {"function": "no",        "activity_value": 0.0},
+      "*6":  {"function": "no",        "activity_value": 0.0},
+      "*8":  {"function": "decreased", "activity_value": 0.5},
+      "*11": {"function": "decreased", "activity_value": 0.5}
+    },
+    "activity_score_to_phenotype": [
+      {"min": 0.0, "max": 0.0,  "phenotype": "PM",  "full_name": "Poor Metabolizer"},
+      {"min": 0.5, "max": 1.0,  "phenotype": "IM",  "full_name": "Intermediate Metabolizer"},
+      {"min": 1.5, "max": 99.0, "phenotype": "NM",  "full_name": "Normal Metabolizer"}
+    ]
+  },
+  "TPMT": {
+    "description": "Thiopurine methyltransferase — metabolizes thiopurine drugs (azathioprine, 6-MP)",
+    "alleles": {
+      "*1":  {"function": "normal",    "activity_value": 1.0},
+      "*2":  {"function": "no",        "activity_value": 0.0},
+      "*3A": {"function": "no",        "activity_value": 0.0},
+      "*3B": {"function": "no",        "activity_value": 0.0},
+      "*3C": {"function": "no",        "activity_value": 0.0},
+      "*4":  {"function": "no",        "activity_value": 0.0}
+    },
+    "activity_score_to_phenotype": [
+      {"min": 0.0, "max": 0.0,  "phenotype": "PM",  "full_name": "Poor Metabolizer (TPMT Deficient)"},
+      {"min": 0.5, "max": 1.0,  "phenotype": "IM",  "full_name": "Intermediate Metabolizer"},
+      {"min": 1.5, "max": 99.0, "phenotype": "NM",  "full_name": "Normal Metabolizer"}
+    ]
+  },
+  "DPYD": {
+    "description": "Dihydropyrimidine dehydrogenase — metabolizes fluoropyrimidines (5-FU, capecitabine)",
+    "alleles": {
+      "*1":  {"function": "normal",    "activity_value": 1.0},
+      "*2A": {"function": "no",        "activity_value": 0.0},
+      "*13": {"function": "no",        "activity_value": 0.0},
+      "c.1129-5923C>G": {"function": "decreased", "activity_value": 0.5},
+      "c.2846A>T":      {"function": "decreased", "activity_value": 0.5},
+      "HapB3":          {"function": "decreased", "activity_value": 0.5}
+    },
+    "activity_score_to_phenotype": [
+      {"min": 0.0, "max": 0.0,  "phenotype": "PM",  "full_name": "Poor Metabolizer (DPD Deficient)"},
+      {"min": 0.5, "max": 1.0,  "phenotype": "IM",  "full_name": "Intermediate Metabolizer"},
+      {"min": 1.5, "max": 99.0, "phenotype": "NM",  "full_name": "Normal Metabolizer"}
+    ]
+  },
+  "UGT1A1": {
+    "description": "UDP-glucuronosyltransferase 1A1 — glucuronidation of irinotecan active metabolite SN-38",
+    "alleles": {
+      "*1":  {"function": "normal",    "activity_value": 1.0},
+      "*6":  {"function": "decreased", "activity_value": 0.5},
+      "*28": {"function": "decreased", "activity_value": 0.5},
+      "*36": {"function": "increased", "activity_value": 1.5},
+      "*37": {"function": "no",        "activity_value": 0.0}
+    },
+    "activity_score_to_phenotype": [
+      {"min": 0.0, "max": 0.0,  "phenotype": "PM",  "full_name": "Poor Metabolizer (Reduced UGT1A1)"},
+      {"min": 0.5, "max": 1.0,  "phenotype": "IM",  "full_name": "Intermediate Metabolizer"},
+      {"min": 1.5, "max": 2.0,  "phenotype": "NM",  "full_name": "Normal Metabolizer"},
+      {"min": 2.5, "max": 99.0, "phenotype": "RM",  "full_name": "Rapid Metabolizer"}
+    ]
+  }
+}

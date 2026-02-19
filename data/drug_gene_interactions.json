@@ -1,0 +1,373 @@
+{
+    "_meta": {
+        "source": "CPIC Guidelines v1.0 — https://cpicpgx.org",
+        "last_updated": "2024-01-01",
+        "genes_covered": [
+            "CYP2D6",
+            "CYP2C19",
+            "CYP2C9",
+            "TPMT",
+            "DPYD",
+            "UGT1A1"
+        ]
+    },
+    "codeine": {
+        "gene": "CYP2D6",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Ineffective",
+                "severity": "high",
+                "confidence_base": 0.95,
+                "recommendation": "Codeine is ineffective in Poor Metabolizers. Use alternative opioids such as morphine or oxycodone at standard doses.",
+                "mechanism": "CYP2D6 converts codeine to morphine. PMs cannot activate the prodrug, leading to no analgesic effect."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "moderate",
+                "confidence_base": 0.88,
+                "recommendation": "Reduce codeine dose by 25-50% or use an alternative. Monitor closely for inadequate analgesia.",
+                "mechanism": "Reduced CYP2D6 activity leads to partial conversion of codeine to morphine."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.92,
+                "recommendation": "Standard codeine dosing is appropriate.",
+                "mechanism": "Normal metabolizer — expected drug conversion and analgesic response."
+            },
+            "UM": {
+                "risk_category": "Toxic",
+                "severity": "critical",
+                "confidence_base": 0.97,
+                "recommendation": "CONTRAINDICATED. Ultrarapid metabolizers convert codeine to morphine too quickly causing potentially fatal opioid toxicity. Use alternative opioids.",
+                "mechanism": "Excess CYP2D6 activity results in dangerously high morphine plasma levels."
+            }
+        }
+    },
+    "tramadol": {
+        "gene": "CYP2D6",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Ineffective",
+                "severity": "high",
+                "confidence_base": 0.90,
+                "recommendation": "Tramadol is ineffective in Poor Metabolizers. Consider alternative analgesic.",
+                "mechanism": "CYP2D6 converts tramadol to active O-desmethyltramadol. PMs cannot activate the prodrug."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "moderate",
+                "confidence_base": 0.85,
+                "recommendation": "Consider reducing tramadol dose. Monitor for adequate pain control.",
+                "mechanism": "Partial conversion reduces analgesic efficacy."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.92,
+                "recommendation": "Standard dosing appropriate.",
+                "mechanism": "Normal enzymatic conversion expected."
+            },
+            "UM": {
+                "risk_category": "Toxic",
+                "severity": "critical",
+                "confidence_base": 0.95,
+                "recommendation": "CONTRAINDICATED. Risk of life-threatening opioid toxicity. Use alternative analgesic.",
+                "mechanism": "Ultrarapid conversion produces excessive O-desmethyltramadol concentrations."
+            }
+        }
+    },
+    "clopidogrel": {
+        "gene": "CYP2C19",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Ineffective",
+                "severity": "high",
+                "confidence_base": 0.95,
+                "recommendation": "Clopidogrel is ineffective in CYP2C19 Poor Metabolizers. Use prasugrel or ticagrelor if not contraindicated.",
+                "mechanism": "CYP2C19 is required to convert clopidogrel (prodrug) to its active thiol metabolite. PMs lack this conversion."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "moderate",
+                "confidence_base": 0.88,
+                "recommendation": "Consider alternative antiplatelet therapy. If clopidogrel is used, monitor platelet function.",
+                "mechanism": "Reduced CYP2C19 activity leads to subtherapeutic active metabolite levels."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.92,
+                "recommendation": "Standard clopidogrel therapy is appropriate.",
+                "mechanism": "Normal CYP2C19 activity — adequate prodrug activation expected."
+            },
+            "RM": {
+                "risk_category": "Safe",
+                "severity": "low",
+                "confidence_base": 0.85,
+                "recommendation": "Standard dosing. Rapid metabolizers may have slightly higher active metabolite levels but generally tolerate standard doses.",
+                "mechanism": "Enhanced CYP2C19 activity increases clopidogrel activation."
+            }
+        }
+    },
+    "omeprazole": {
+        "gene": "CYP2C19",
+        "cpic_level": "B",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "low",
+                "confidence_base": 0.80,
+                "recommendation": "Reduce omeprazole dose. PMs have dramatically increased drug exposure (AUC ~5x higher). Standard dose may cause drug accumulation.",
+                "mechanism": "CYP2C19 is the main metabolizer of omeprazole. PMs have markedly reduced clearance."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "low",
+                "confidence_base": 0.75,
+                "recommendation": "Consider dose reduction. Monitor for side effects.",
+                "mechanism": "Partially reduced omeprazole clearance."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.90,
+                "recommendation": "Standard dosing. Use standard dose.",
+                "mechanism": "Normal metabolism expected."
+            },
+            "RM": {
+                "risk_category": "Ineffective",
+                "severity": "moderate",
+                "confidence_base": 0.82,
+                "recommendation": "Rapid metabolizers may require higher doses for adequate acid suppression. Consider doubling the standard dose.",
+                "mechanism": "Increased CYP2C19 activity leads to rapid omeprazole clearance, reducing efficacy."
+            }
+        }
+    },
+    "warfarin": {
+        "gene": "CYP2C9",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "critical",
+                "confidence_base": 0.97,
+                "recommendation": "Significantly reduce warfarin dose (up to 50-75% reduction). Start with lowest effective dose and titrate cautiously. Intensive INR monitoring required.",
+                "mechanism": "CYP2C9 is the primary metabolizer of S-warfarin (the active enantiomer). PMs have severely reduced clearance, causing drug accumulation and bleeding risk."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "high",
+                "confidence_base": 0.93,
+                "recommendation": "Reduce warfarin starting dose by 25-50%. More frequent INR monitoring recommended during initiation.",
+                "mechanism": "Reduced CYP2C9 activity leads to higher warfarin exposure and increased bleeding risk."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.90,
+                "recommendation": "Standard warfarin dosing. Use CPIC dosing algorithm incorporating VKORC1/CYP2C19 variants.",
+                "mechanism": "Normal warfarin metabolism expected."
+            }
+        }
+    },
+    "azathioprine": {
+        "gene": "TPMT",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Toxic",
+                "severity": "critical",
+                "confidence_base": 0.98,
+                "recommendation": "CONTRAINDICATED at standard doses. If thiopurine is required, reduce dose by 90% (10% of standard) and monitor weekly blood counts. Consider non-thiopurine alternatives.",
+                "mechanism": "TPMT deficiency causes accumulation of cytotoxic thioguanine nucleotides (TGNs), leading to severe myelosuppression."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "high",
+                "confidence_base": 0.92,
+                "recommendation": "Reduce azathioprine dose to 30-70% of standard dose. Frequent CBC monitoring required.",
+                "mechanism": "Intermediate TPMT activity leads to moderately elevated TGN levels and myelosuppression risk."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.88,
+                "recommendation": "Standard azathioprine dosing appropriate.",
+                "mechanism": "Adequate TPMT-mediated methylation prevents TGN accumulation."
+            }
+        }
+    },
+    "mercaptopurine": {
+        "gene": "TPMT",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Toxic",
+                "severity": "critical",
+                "confidence_base": 0.98,
+                "recommendation": "Reduce dose by 90% and monitor blood counts weekly. Consider alternative therapy.",
+                "mechanism": "TPMT deficiency leads to accumulation of 6-thioguanine nucleotides causing myelosuppression."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "high",
+                "confidence_base": 0.90,
+                "recommendation": "Reduce to 30-50% of standard dose with close CBC monitoring.",
+                "mechanism": "Partial TPMT deficiency increases TGN exposure."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.88,
+                "recommendation": "Standard dosing appropriate.",
+                "mechanism": "Normal TPMT activity expected."
+            }
+        }
+    },
+    "fluorouracil": {
+        "gene": "DPYD",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Toxic",
+                "severity": "critical",
+                "confidence_base": 0.97,
+                "recommendation": "CONTRAINDICATED. DPD deficiency causes life-threatening 5-FU toxicity (severe mucositis, neutropenia, neurotoxicity). Use alternative non-fluoropyrimidine therapy.",
+                "mechanism": "DPYD (DPD) catabolizes >80% of 5-FU. Deficiency leads to massive drug accumulation and organ-threatening toxicity."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "high",
+                "confidence_base": 0.93,
+                "recommendation": "Reduce starting dose by 50%. Up-titrate only if tolerated. Monitor closely for toxicity.",
+                "mechanism": "Reduced DPD activity leads to higher 5-FU exposure and toxicity risk."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.88,
+                "recommendation": "Standard fluorouracil dosing.",
+                "mechanism": "Normal DPD-mediated catabolism expected."
+            }
+        }
+    },
+    "capecitabine": {
+        "gene": "DPYD",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Toxic",
+                "severity": "critical",
+                "confidence_base": 0.97,
+                "recommendation": "CONTRAINDICATED. DPD-deficient patients cannot metabolize the 5-FU generated from capecitabine. Life-threatening toxicity expected.",
+                "mechanism": "Capecitabine is converted to 5-FU in vivo. DPD deficiency causes 5-FU accumulation."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "high",
+                "confidence_base": 0.92,
+                "recommendation": "Reduce starting dose by 25-50%. Intensify toxicity monitoring.",
+                "mechanism": "Partial DPD deficiency increases 5-FU exposure."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.88,
+                "recommendation": "Standard capecitabine dosing.",
+                "mechanism": "Normal DPD activity expected."
+            }
+        }
+    },
+    "irinotecan": {
+        "gene": "UGT1A1",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Toxic",
+                "severity": "critical",
+                "confidence_base": 0.95,
+                "recommendation": "Reduce irinotecan starting dose by at least 50%. Some guidelines recommend dose reduction even for IM. Use lowest effective dose with toxicity monitoring.",
+                "mechanism": "UGT1A1 glucuronidates SN-38 (active metabolite of irinotecan) for elimination. Reduced UGT1A1 activity causes SN-38 accumulation and severe diarrhea/neutropenia."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "moderate",
+                "confidence_base": 0.85,
+                "recommendation": "Consider starting at lower dose (75-80% of standard). Monitor for GI toxicity and neutropenia.",
+                "mechanism": "Partial reduction in SN-38 glucuronidation increases drug exposure."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.88,
+                "recommendation": "Standard irinotecan dosing.",
+                "mechanism": "Normal UGT1A1 activity — adequate SN-38 glucuronidation expected."
+            },
+            "RM": {
+                "risk_category": "Ineffective",
+                "severity": "low",
+                "confidence_base": 0.75,
+                "recommendation": "May require higher doses for adequate efficacy. Monitor therapeutic response.",
+                "mechanism": "Enhanced UGT1A1 activity may reduce SN-38 exposure and drug efficacy."
+            }
+        }
+    },
+    "tacrolimus": {
+        "gene": "CYP3A5",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "moderate",
+                "confidence_base": 0.85,
+                "recommendation": "Standard tacrolimus dosing with typical TDM monitoring. Non-expressers require lower doses.",
+                "mechanism": "CYP3A5 non-expressers (*3/*3) have reduced tacrolimus clearance."
+            },
+            "NM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "moderate",
+                "confidence_base": 0.85,
+                "recommendation": "Increase tacrolimus starting dose (1.5-2x standard). Perform standard TDM.",
+                "mechanism": "CYP3A5 expressers have higher tacrolimus clearance."
+            }
+        }
+    },
+    "amitriptyline": {
+        "gene": "CYP2D6",
+        "cpic_level": "A",
+        "phenotype_rules": {
+            "PM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "high",
+                "confidence_base": 0.90,
+                "recommendation": "Reduce amitriptyline dose by 50% or avoid. Consider alternative antidepressant not metabolized by CYP2D6.",
+                "mechanism": "CYP2D6 metabolizes amitriptyline. PMs have markedly elevated drug levels, increasing anticholinergic and cardiac toxicity risk."
+            },
+            "IM": {
+                "risk_category": "Adjust Dosage",
+                "severity": "moderate",
+                "confidence_base": 0.85,
+                "recommendation": "Consider 25-50% dose reduction. Monitor for side effects.",
+                "mechanism": "Reduced CYP2D6 activity leads to higher amitriptyline exposure."
+            },
+            "NM": {
+                "risk_category": "Safe",
+                "severity": "none",
+                "confidence_base": 0.88,
+                "recommendation": "Standard dosing.",
+                "mechanism": "Normal metabolism expected."
+            },
+            "UM": {
+                "risk_category": "Ineffective",
+                "severity": "moderate",
+                "confidence_base": 0.85,
+                "recommendation": "Ultrarapid metabolizers may require higher doses for efficacy. Consider alternative antidepressant.",
+                "mechanism": "Increased CYP2D6 activity dramatically reduces amitriptyline plasma levels."
+            }
+        }
+    }
+}
